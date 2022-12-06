@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin"
+    />
+    <title>Tribute</title>
+  </head>
+
+  <body>
+    <ul>
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="page1.html">What he has done</a></li>
+      <li><a href="page2.html">What he is doing now</a></li>
+      <li><a href="page3.html">Outro</a></li>
+    </ul>
+    <h1>This is a tribute page to my father Crag Miller</h1>
+    <img src="Images/Craig Miller.jfif" alt="Craig Miller" width="10%" />
+    <p class="big">
+      I am doing this tribute to him because of all the things he has gotten me
+      into over the years.<br />These include Rc Racing, Sports, Electronics and
+      Automotives<br>
+      [<a href="page1.html">Next page</a>]
+    </p>
+    <button onclick="toggle();" width="25%"><img src="Images/linkedin.png" alt="Linkedin" width="80%"></button><br>
+    <iframe id="myiframe" src="https://ca.linkedin.com/in/craigmilleryeg" frameborder="0" width="800px" height="600px" hidden="hidden"></iframe>
+    <address>Cody Miller<br> Edmonton, AB</address>
+  </body>
+  <script>
+    let toggle = button => {
+      let element = document.getElementById("myiframe");
+      let hidden = element.getAttribute("hidden");
+      if (hidden) {
+         element.removeAttribute("hidden");
+      } else {
+         element.setAttribute("hidden", "hidden");
+      }
+    }
+  </script>
+</html>
