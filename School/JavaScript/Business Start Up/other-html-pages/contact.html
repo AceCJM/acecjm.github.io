@@ -2,7 +2,6 @@
   <head>
     <title>Web Development Company</title>
     <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -18,24 +17,21 @@
       <img src="../images/company-logo.png" alt="Company logo" />
     </header>
     <main>
-      <h2>About Us</h2>
+      <h2>Contact Us</h2>
       <p>
-        Sgithi SgigiGtat is upcoming leading provider of web development
-        services. We have been in business for almost a year and already have a
-        team of experienced and skilled developers who can create custom web
-        solutions to meet your needs.
+        Need to get in touch with us? Fill out the form below and we'll get back
+        to you as soon as possible.
       </p>
-      <h3>Our Services Include</h3>
-      <ul>
-        <li>Website design and development</li>
-        <li>E-commerce development</li>
-        <li>Web application development</li>
-        <li>Search engine optimization (SEO)</li>
-      </ul>
+      <form action="../scripts/contact.php" method="POST">
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <input type="submit" value="Submit">
+      </form>
     </main>
     <footer>
-      <p>Copyright 2022 Sgithi SgigiGtat</p>
+      <p>Copyright Sgithi SgigiGtat</p>
       <p>Created by Cody Miller</p>
     </footer>
   </body>
 </html>
+``
