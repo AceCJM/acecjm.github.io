@@ -40,7 +40,7 @@ $_POST["insert your message here"]. "From: an@email.address");
         to you as soon as possible.
       </p>
       <form method="post" action="../scripts/contact.php">
-        <input type="submit" />
+        <input type="submit" value="Contact Us"/>
       </form>
     </main>
     <footer>
