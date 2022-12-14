@@ -28,7 +28,7 @@ $_POST["insert your message here"]. "From: an@email.address");
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
       </nav>
       <img src="../images/company-logo.png" alt="Company logo" />
