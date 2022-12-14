@@ -1,3 +1,19 @@
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("your@email.address", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
+?>
 <html>
   <head>
     <title>Web Development Company</title>
@@ -23,14 +39,8 @@
         Need to get in touch with us? Fill out the form below and we'll get back
         to you as soon as possible.
       </p>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" /><br />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" /><br />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea><br />
-        <button type="submit">Send</button>
+      <form method="post" action="../scripts/contact.php">
+        <input type="submit" />
       </form>
     </main>
     <footer>
