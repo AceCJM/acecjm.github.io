@@ -19,9 +19,9 @@ class S(BaseHTTPRequestHandler):
         query_components = parse_qs(urlparse(self.path).query)
         if query_components.get('set_freq'):
             freq = query_components.get('set_freq') # <--- do whatever you want with that value
-            print(freq)
+            print("hello")
         self._set_response(200)
-        self.wfile.write("Python HTTP server received your GET request".encode("utf-8"))
+        self.wfile.write("This has been seen".encode("utf-8"))
         
 
 def run(server_class=HTTPServer, handler_class=S, port=8080):
